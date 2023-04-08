@@ -1,7 +1,7 @@
 # T2I-HumanFeedback
 Implementations of Baseline Methods for Aligning Text2Img Diffusion Models with Human Feedback.
-- Aligning text-to-image models using human feedback. Google Research.
-- Better Aligning Text-to-Image Models with Human Preference. MMLab@CUHK.
+- [Aligning text-to-image models using human feedback](https://arxiv.org/abs/2302.12192). Google Research.
+- [Better Aligning Text-to-Image Models with Human Preference](https://arxiv.org/abs/2303.14420). MMLab@CUHK.
 > The code framework is still under reconstruction and will be released soon. 
 
 ## Demos
