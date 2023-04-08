@@ -1,6 +1,7 @@
 # T2I-HumanFeedback
 Implementations of Baseline Methods for Aligning Text2Img Diffusion Models with Human Feedback.
-
+- Aligning text-to-image models using human feedback. Google Research.
+- Better Aligning Text-to-Image Models with Human Preference. MMLab@CUHK.
 > The code framework is still under reconstruction and will be released soon. 
 
 ## Demos
@@ -31,7 +32,7 @@ Right: output of Aligned Stable Diffusion Model.
 
 ## Citations
 
-```python
+```bibtex
 @article{lee2023aligning,
   title={Aligning text-to-image models using human feedback},
   author={Lee, Kimin and Liu, Hao and Ryu, Moonkyung and Watkins, Olivia and Du, Yuqing and Boutilier, Craig and Abbeel, Pieter and Ghavamzadeh, Mohammad and Gu, Shixiang Shane},
@@ -40,7 +41,7 @@ Right: output of Aligned Stable Diffusion Model.
 }
 ```
 
-```python
+```bibtex
 @article{wu2023better,
   title={Better Aligning Text-to-Image Models with Human Preference},
   author={Wu, Xiaoshi and Sun, Keqiang and Zhu, Feng and Zhao, Rui and Li, Hongsheng},
