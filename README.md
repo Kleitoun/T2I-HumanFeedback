@@ -5,6 +5,8 @@ Implementations of Baseline Methods for Aligning Text2Img Diffusion Models with 
 - [Better Aligning Text-to-Image Models with Human Preference](https://arxiv.org/abs/2303.14420). MMLab@CUHK.
 
 > This repo is still under reconstruction. 
+>
+> And I am working on incorporating Reinforcement Learning into t2i human feedback training.
 
 ## Setup
 
@@ -77,6 +79,7 @@ tensorboard --logdir=.
 
 - [ ] Faster image generation and labeling.
 - [ ] Joint training with filtered [LAION](https://laion.ai/) and [Human preference dataset](https://mycuhk-my.sharepoint.com/personal/1155172150_link_cuhk_edu_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F1155172150_link_cuhk_edu_hk%2FDocuments%2FHPS%2Fdataset.zip&parent=%2Fpersonal%2F1155172150_link_cuhk_edu_hk%2FDocuments%2FHPS&ga=1).
+- [ ] Incorporating Reinforcement Learning into text2img human feedback training.
 
 ## Results
 
