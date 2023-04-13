@@ -692,7 +692,7 @@ def main():
                     validation_prompt = gen_prompt_once()
                     images = []
                     original_images = []
-                    images+=pipeline(validation_prompt,num_inference_steps=30,generator=generator,num_images_per_prompt=args.num_validation_images).images
+                    images+=pipeline(validation_prompt,num_inference_steps=30,generator=generator,num_images_per_prompt=args.num_validation_images,negative_prompt=validation_prompt+" weird image").images
                     original_images+=original_pipeline(validation_prompt,num_inference_steps=30,generator=generator,num_images_per_prompt=args.num_validation_images).images
 
                     
