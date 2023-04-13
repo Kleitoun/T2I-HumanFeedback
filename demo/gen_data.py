@@ -9,7 +9,7 @@ def gen_data():
     device = "cuda" if torch.cuda.is_available() else "cpu" 
     prompts = open("gen_prompts.txt","r").readlines()
     n_samples = 3
-    pipe = StableDiffusionPipeline.from_pretrained("/mnt/lustre/share_data/wangfuyun.vendor/weights/Checkpoint/stable-diffusion-v1-5")
+    pipe = StableDiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5")
     pipe.to(device)
 
     for seed in [0,1]:
