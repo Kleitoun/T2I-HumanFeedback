@@ -1,9 +1,15 @@
 # T2I-HumanFeedback
 Implementations of Baseline Methods for Aligning Text2Img Diffusion Models with Human Feedback.
 
-> The code framework is still under reconstruction and will be released soon. 
 
-## Demos
+
+
+
+## TODO
+
+- [ ] Demo released for 
+
+## Results
 
 Left: output of original Stable Diffusion Model.
 
