@@ -127,3 +127,8 @@ Right: output of Aligned Stable Diffusion Model.
 }
 ```
 
+## Shoutouts
+This code builds on diffusers. Thanks for open-sourcing!
+## Contact
+If you have any questions or better implementation ways, feel free to open an issue or contact me through e-mail (wangfuyun@smail.nju.edu.cn)
+
