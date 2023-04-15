@@ -80,6 +80,7 @@ tensorboard --logdir=.
 - [ ] Faster image generation and labeling.
 - [ ] Joint training with filtered [LAION](https://laion.ai/) and [Human preference dataset](https://mycuhk-my.sharepoint.com/personal/1155172150_link_cuhk_edu_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F1155172150_link_cuhk_edu_hk%2FDocuments%2FHPS%2Fdataset.zip&parent=%2Fpersonal%2F1155172150_link_cuhk_edu_hk%2FDocuments%2FHPS&ga=1).
 - [ ] Incorporating Reinforcement Learning into text2img human feedback training.
+- [ ] Open Reward Model: [ImageReward](https://github.com/THUDM/ImageReward).
 
 ## Results
 
