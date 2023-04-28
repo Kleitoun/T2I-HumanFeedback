@@ -96,7 +96,7 @@ Right: output of Aligned Stable Diffusion Model.
 <img src="./assets/FourDogsOnTheTable.png" width="800px">
 </div>
 
-`prompt`: One red dog in the dessert
+`prompt`: One red dog in the desert
 
 <div align="center">
 <img src="./assets/OneRedColoredDogInTheDessert.png" width="800px">
