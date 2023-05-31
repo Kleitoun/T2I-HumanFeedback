@@ -52,37 +52,8 @@ class RewardModel(pl.LightningModule):
         features = torch.concat([text_features,image_features],dim=-1)
         pred_rates = self.mlp(features)
         loss_mse = F.mse_loss(pred_rates,rates.unsqueeze(1))
-
-        index = torch.where(rates == 1)[0]
-        pos_image_features = image_features[index]
-        pos_texts = []
-        for idx,text in enumerate(texts):
-            if idx in index:
-                pos_texts.append(text)
             
-        text_perturbated_prompts = []
-        n_text = len(pos_texts)
-        for _ in range(N):
-            for idx, text in enumerate(pos_texts):
-                text_perturbated_prompts += get_perturbated_prompts(text,1) # 这里也会有问题
-        if text_perturbated_prompts:
-            text_perturbated_tokenized = self.tokenizer(text_perturbated_prompts)
-            text_perturbated_tokenized = text_perturbated_tokenized.to("cuda")
-            text_features = self.clip.encode_text(text_perturbated_tokenized)
-            text_features = text_features/text_features.norm(dim=-1, keepdim=True)
-            print(text_features.shape)
-            print(pos_image_features.shape)
-            features = torch.concat([text_features,pos_image_features.repeat(N,1)],dim=-1)
-            perturbated_pred_rates = self.mlp(features).reshape(-1,N)
-            
-            pred_rates = torch.ones((n_text,1),dtype=torch.long).to("cuda")
-            concated_pred_rates = torch.concat([pred_rates,perturbated_pred_rates],dim=-1)
-            labels = torch.zeros(n_text,dtype=torch.long).to("cuda")
-            loss_clip = lamda * F.cross_entropy(concated_pred_rates,labels)
-        else:
-            loss_clip = torch.tensor(0.0).to("cuda")
-
-        loss = loss_mse + loss_clip
+        loss = loss_mse
 
         
         self.log("train_loss_mse",loss_mse)
